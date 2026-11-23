@@ -37,6 +37,7 @@ test('exercise metadata passes structural and safety validation', () => {
   assert.doesNotThrow(() => validateExercise(repositoryRoot));
 });
 
+
 test('starter scaffold does not pass learner grading before implementation', () => {
   for (const name of ['step1-architecture', 'step2-data', 'step3-api', 'step4-frontend']) {
     assert.throws(() => checks[name](repositoryRoot));
